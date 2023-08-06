@@ -1,3 +1,170 @@
+@import './colors';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    height: 300vh;
+}
+
 body {
     font-family: sans-serif;
+    font-size: 1.6rem;
 }
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+a {
+    color: $black;
+    text-decoration: none;
+}
+
+.active {
+    background-color: $black;
+    color: $white;
+}
+
+// nav
+.nav-desktop,
+.nav-mobile {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $pure-white;
+
+    .fa-tree {
+        color: $gray;
+    }
+
+    &__boxes {
+        display: flex;
+        height: 100%;
+    }
+
+    &__box {
+        width: 100px;
+        height: 100%;
+        background-color: $pure-white;
+        color: $black;
+    }
+
+    &__title {
+        font-size: 30px;
+    }
+
+    &__item {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: color 0.3s, background-color 0.3s;
+    }
+}
+
+.nav-mobile {
+    display: flex;
+
+    &__title {
+        padding-left: 25px;
+    }
+
+    &__item {
+        display: flex;
+        height: 70px;
+        color: $white;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    &__item:hover {
+        color: $pink;
+
+    }
+
+    &-menu {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $green;
+        transform: translateX(100%);
+        transition: transform 0.5s;
+
+        &--active {
+            transform: translateX(0%);
+        }
+    }
+
+    &__burger-btn {
+        padding: 50px;
+        position: relative;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55px;
+        height: 55px;
+        background: none;
+        border: 1px solid transparent;
+        transition: color 0.3s;
+        cursor: pointer;
+    }
+
+    &__burger-btn:hover {
+        color: $pink;
+    }
+
+    &__burger-box {
+        .fa-bars {
+            font-size: 32px;
+        }
+    }
+}
+
+// MEDIA
+@media(min-width: 576px) {}
+
+@media(min-width: 768px) {}
+
+@media(min-width: 992px) {
+
+    .nav-desktop {
+        display: flex;
+
+        &__title {
+            padding-left: 35px;
+        }
+
+        &__boxes {
+            padding-right: 35px;
+        }
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+}
+
+@media(min-width: 1100px) {}
