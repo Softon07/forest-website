@@ -58,8 +58,8 @@ a {
     }
 
     &__boxes {
-        display: flex;
         height: 100%;
+        display: flex;
     }
 
     &__box {
@@ -106,11 +106,12 @@ a {
     &-menu {
         position: fixed;
         top: 0;
+        padding-top: 100px;
         width: 100vw;
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         background-color: $green;
         transform: translateX(100%);
@@ -122,16 +123,16 @@ a {
     }
 
     &__burger-btn {
-        padding: 50px;
         position: relative;
+        z-index: 100;
         top: 0;
         right: 0;
-        z-index: 100;
+        padding: 50px;
+        width: 55px;
+        height: 55px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 55px;
-        height: 55px;
         background: none;
         border: 1px solid transparent;
         transition: color 0.3s;
@@ -181,16 +182,101 @@ a {
         align-items: flex-start;
     }
 
+    &__text {
+        font-size: 20px;
+    }
+
+    &__heading {
+        font-size: 32.5px;
+    }
+
     &__text,
     &__heading {
         color: $pure-white;
     }
 }
 
-// MEDIA
-@media(min-width: 576px) {}
+// about
+.about {
+    margin-bottom: 50px;
+    width: 100%;
 
-@media(min-width: 768px) {}
+    &__title {
+        margin: 40px 0;
+        font-size: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+
+    &__content {
+        margin-bottom: 50px;
+        padding: 0 35px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    &__pic {
+        width: 520px;
+
+        img {
+            width: 520px;
+        }
+    }
+
+    &__text {
+        padding-left: 50px;
+        height: 100%;
+
+        h3 {
+            font-size: 22px;
+        }
+
+        p {
+            padding-top: 15px;
+            line-height: 28px;
+        }
+    }
+
+}
+
+// MEDIA
+@media (max-width: 992px) {
+    .about {
+        &__content {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__pic {
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__text {
+            padding: 0;
+            width: 520px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                padding-top: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1100px) {}
+
+@media(max-width: 768px) {}
 
 @media(min-width: 992px) {
 
@@ -211,4 +297,43 @@ a {
     }
 }
 
-@media(min-width: 1100px) {}
+@media(max-width: 576px) {
+    .about {
+        &__pic {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__text {
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                padding: 10px 20px 10px 20px;
+                width: 80%;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media(max-width: 450px) {
+    .header {
+        &__heading {
+            font-size: 25px;
+        }
+    }
+
+    .about {
+        &__text {
+            p {
+                width: 50%;
+                font-size: 14px;
+            }
+        }
+    }
+}
