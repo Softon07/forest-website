@@ -17,7 +17,9 @@
     <main class="main">
         <nav class="nav">
     <div class="nav-desktop wrapper">
-        <p class="nav-desktop__title"><i class="fa-solid fa-tree"></i> Forest</p>
+        <a href="#home">
+            <p class="nav-desktop__title"><i class="fa-solid fa-tree"></i> Forest</p>
+        </a>
         <div class="nav-desktop__boxes">
             <div class="nav-desktop__box">
                 <a href="#home" class="nav-desktop__item active">Home</a>
@@ -37,7 +39,9 @@
 
 <div class="nav">
     <div class="nav-mobile">
-        <p class="nav-mobile__title"><i class="fa-solid fa-tree"></i> Forest</p>
+        <a href="#home">
+            <p class="nav-mobile__title"><i class="fa-solid fa-tree"></i> Forest</p></a>
+        </a>
         <div class="nav-mobile-menu">
             <a href="#home" class="nav-mobile__item">Home</a>
             <a href="#about" class="nav-mobile__item">O nas</a>
@@ -78,15 +82,66 @@
 </section>
         <section class="family">
     <div class="family__box wrapper">
-        <h3 class="family__heading">Przygoda dla całej rodziny</h3>
+        <h2 class="family__heading">Przygoda dla całej rodziny</h2>
     </div>
     <div class="family__shadow"></div>
 </section>
+        <section class="offer" id="offer">
+    <div class="offer__header">
+        <h2 class="offer__heading">Oferta</h2>
+        <p class="offer__p">Wybierz jedną z naszych wspaniałych ofert!</p>
+        <p class="offer__p">Sprawdź: <a class="offer__a link" href="#offer">Więcej naszych ofert</a></p>
+    </div>
+
+    <div class="offer__cards">
+        <div class="offer__card">
+            <h3 class="offer__card-name">Demo</h3>
+            <p class="offer__card-price">$0</p>
+            <ul class="offer__card-items-box">
+                <li class="offer__card-item"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                <li class="offer__card-item"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                <li class="offer__card-item offer__card-item offer__card-item--gray"><i class="fa-solid fa-minus"></i> opcja poza pakietem</li>
+                <li class="offer__card-item offer__card-item offer__card-item--gray"><i class="fa-solid fa-minus"></i> opcja poza pakietem</li>
+                <li class="offer__card-item offer__card-item offer__card-item--gray"><i class="fa-solid fa-minus"></i> opcja poza pakietem</li>
+            </ul>
+            <button class="offer__card-btn glass">Wybierz</button>
+        </div>
+        <div class="offer__card">
+            <h3 class="offer__card-name">Standard</h3>
+            <p class="offer__card-price">$99</p>
+            <ul class="offer__card-items-box">
+                <li class="offer__card-item"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                <li class="offer__card-item"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                <li class="offer__card-item"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                <li class="offer__card-item offer__card-item--gray"><i class="fa-solid fa-minus"></i> opcja poza
+                    pakietem</li>
+                <li class="offer__card-item offer__card-item--gray"><i class="fa-solid fa-minus"></i> opcja poza
+                    pakietem</li>
+            </ul>
+            <button class="offer__card-btn offer__card-btn--highlighted glass">Wybierz</button>
+        </div>
+        <div class="offer__card">
+            <h3 class="offer__card-name">Premium</h3>
+            <p class="offer__card-price">$299</p>
+            <ul class="offer__card-items-box">
+                <li class="offer__card-item"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                <li class="offer__card-item"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                <li class="offer__card-item"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                <li class="offer__card-item"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                <li class="offer__card-item"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
+            </ul>
+            <button class="offer__card-btn glass">Wybierz</button>
+        </div>
+    </div>
+
+
+
+</section>
     </main>
 
-    <!-- <footer>
+    <footer>
     <p>footer</p>
-</footer> -->
+</footer>
     <script src="./dist/js/main.min.js"></script>
 </body>
 

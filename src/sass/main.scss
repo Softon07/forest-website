@@ -1,4 +1,5 @@
 @import './colors';
+@import './animations';
 
 *,
 *::before,
@@ -36,10 +37,13 @@ a {
 }
 
 #home,
-#about,
 #offer,
 #contact {
     scroll-margin-top: 90px;
+}
+
+#about {
+    scroll-margin-top: 130px;
 }
 
 // nav
@@ -95,6 +99,7 @@ a {
     position: sticky;
     top: 0;
     display: flex;
+    border-bottom: 0.1px solid rgba($black, 0.1);
 
     &__title {
         padding-left: 25px;
@@ -110,7 +115,7 @@ a {
     }
 
     &__item:hover {
-        color: $pink;
+        color: $light-green;
     }
 
     &-menu {
@@ -151,7 +156,7 @@ a {
     }
 
     &__burger-btn:hover {
-        color: $pink;
+        color: $light-green;
     }
 
     &__burger-box {
@@ -179,7 +184,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid $pure-white;
+        border: 1px solid $white;
     }
 
     &__heading {
@@ -283,7 +288,7 @@ a {
         height: 100%;
 
         h3 {
-            text-align: center;
+            text-align: left;
             font-size: 22px;
         }
 
@@ -295,8 +300,105 @@ a {
 
 }
 
-// MEDIA
+// offer
+.offer {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
+    &__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__heading {
+        // padding-top: 25px;
+        padding-bottom: 25px;
+        font-size: 32px;
+        font-weight: lighter;
+        text-transform: uppercase;
+    }
+
+    &__p {
+        margin-bottom: 20px;
+    }
+
+    &__a {
+        font-weight: bold;
+
+    }
+
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        margin: 20px;
+        padding: 25px;
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        &-name {
+            font-size: 22px;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        &-price {
+            padding-top: 8px;
+            padding-bottom: 15px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        &-items-box {
+            list-style: none;
+
+            .fa-check {
+                color: $light-green;
+            }
+        }
+
+        &-item {
+            line-height: 30px;
+
+            &--gray {
+                color: $gray;
+            }
+        }
+
+        &-btn {
+            width: 180px;
+            height: 40px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            background-color: $white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            cursor: pointer;
+
+            &--highlighted {
+                background-color: $light-green;
+            }
+        }
+    }
+
+}
+
+// MEDIA
 @media(min-width: 992px) {
 
     .nav-desktop {
@@ -403,7 +505,7 @@ a {
         &__content {
             padding: 0;
         }
-        
+
         &__text {
             padding: 0 25px;
         }
@@ -419,6 +521,7 @@ a {
 
         &__text {
             padding: 0;
+
             h3 {
                 font-size: 18px;
             }
@@ -456,5 +559,29 @@ a {
                 font-size: 14px;
             }
         }
+    }
+
+    .offer {
+
+        &__p {
+            padding: 10px 30px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .link {
+            display: block;
+        }
+
+
+        &__card {
+            min-width: 240px;
+            width: 80%;
+            &-name {
+                // text-align: center;
+            }
+        }
+
+        // &__card {}
     }
 }
