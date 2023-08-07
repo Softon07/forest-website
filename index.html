@@ -22,16 +22,16 @@
         </a>
         <div class="nav-desktop__boxes">
             <div class="nav-desktop__box">
-                <a href="#home" class="nav-desktop__item active">Home</a>
+                <a href="#home" class="nav-desktop__item home-link active">Home</a>
             </div>
             <div class="nav-desktop__box">
-                <a href="#about" class="nav-desktop__item">O nas</a>
+                <a href="#about" class="nav-desktop__item about-link">O nas</a>
             </div>
             <div class="nav-desktop__box">
-                <a href="#offer" class="nav-desktop__item">Oferta</a>
+                <a href="#offer" class="nav-desktop__item offer-link">Oferta</a>
             </div>
             <div class="nav-desktop__box">
-                <a href="#contact" class="nav-desktop__item">Kontakt</a>
+                <a href="contact.html#contact" class="nav-desktop__item contact-link">Kontakt</a>
             </div>
         </div>
     </div>
@@ -46,7 +46,7 @@
             <a href="#home" class="nav-mobile__item">Home</a>
             <a href="#about" class="nav-mobile__item">O nas</a>
             <a href="#offer" class="nav-mobile__item">Oferta</a>
-            <a href="#contact" class="nav-mobile__item">Kontakt</a>
+            <a href="contact.html#contact" class="nav-mobile__item">Kontakt</a>
         </div>
         <button class="nav-mobile__burger-btn">
             <div class="nav-mobile__burger-box">
@@ -55,14 +55,14 @@
         </button>
     </div>
 </div>
-        <header class="header" id="home">
+        <header class="header section" id="home">
     <div class="header__title wrapper">
         <p class="header__text">Forest Group</p>
         <h1 class="header__heading">Najpiękniejszy park w Twojej okolicy!</h1>
     </div>
     <div class="header__shadow"></div>
 </header>
-        <section class="about wrapper" id="about">
+        <section class="about wrapper section" id="about">
     <h2 class="about__title">o nas</h2>
     <div class="about__content">
         <div class="about__pic">
@@ -86,7 +86,7 @@
     </div>
     <div class="family__shadow"></div>
 </section>
-        <section class="offer" id="offer">
+        <section class="offer section" id="offer">
     <div class="offer__header">
         <h2 class="offer__heading">Oferta</h2>
         <p class="offer__p">Wybierz jedną z naszych wspaniałych ofert!</p>
@@ -137,9 +137,7 @@
 
 
 </section>
-    </main>
-
-    <footer class="footer">
+        <footer class="footer">
     <div class="wrapper">
 
         <div class="footer__boxes">
@@ -178,9 +176,12 @@
         </div>
     </div>
     <hr>
-    <p class="footer__bottom-text"> &copy; <span class="footer__year"></span>Forest Group Company Ltd.</p>
+    <p class="footer__bottom-text"> &copy; <span class="footer__year"></span></p>
 </footer>
+    </main>
+
     <script src="./dist/js/main.min.js"></script>
+    <script src="./dist/js/scrol.min.js"></script>
 </body>
 
 </html>
