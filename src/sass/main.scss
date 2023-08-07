@@ -462,6 +462,69 @@ a {
     }
 }
 
+// contact
+.contact {
+    padding: 50px;
+    width: 100%;
+
+    &__title {
+        padding-bottom: 50px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__data-box {
+        width: 100%;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__data {
+        input {
+            padding: 10px;
+            margin-top: 5px;
+            width: 100%;
+            height: 40px;
+        }
+    }
+
+    &__form-box {
+        padding: 10px 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        textarea {
+            margin-top: 5px;
+            width: 100%;
+            resize: none;
+        }
+    }
+
+    &__form-btn {
+        margin: 30px 20px;
+        padding: 10px 20px;
+        width: 300px;
+        border: none;
+        background: none;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+    }
+
+}
+
 // MEDIA
 @media(min-width: 992px) {
 
@@ -569,6 +632,33 @@ a {
             }
         }
     }
+
+    .contact {
+
+        &__data-box {
+            padding: 0;
+            min-width: 300px;
+            flex-direction: column;
+        }
+
+        &__data {
+            padding: 10px 0;
+        }
+
+        &__form-box {
+            padding: 10px 0;
+
+            textarea {
+                min-width: 300px;
+            }
+        }
+
+        &__form-btn {
+            margin: 30px 0;
+        }
+
+    }
+
 }
 
 @media(max-width: 576px) {
@@ -680,9 +770,11 @@ a {
 
         &__box {
             margin: 25px 0;
+
             &-title {
                 font-size: 18px;
             }
+
             &-list-item {
                 font-size: 14px;
             }
@@ -693,8 +785,40 @@ a {
                 font-size: 30px;
             }
         }
+
         &__bottom-text {
             font-size: 13px;
         }
     }
+
+    .contact {
+        &__title {
+            padding-bottom: 20px;
+        }
+
+        padding: 20px;
+
+        &__data-box {
+            padding: 0;
+            min-width: 200px;
+            flex-direction: column;
+        }
+
+        &__data {
+            padding: 10px 0;
+        }
+
+        &__form-box {
+            padding: 10px 0;
+
+            textarea {
+                min-width: 200px;
+            }
+        }
+
+        &__form-btn {
+            width: 200px;
+        }
+    }
+
 }
