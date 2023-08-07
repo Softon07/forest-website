@@ -35,6 +35,13 @@ a {
     color: $white;
 }
 
+#home,
+#about,
+#offer,
+#contact {
+    scroll-margin-top: 90px;
+}
+
 // nav
 .nav {
     position: sticky;
@@ -52,6 +59,7 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: $pure-white;
+    overflow: hidden;
 
     .fa-tree {
         color: $gray;
@@ -84,6 +92,8 @@ a {
 }
 
 .nav-mobile {
+    position: sticky;
+    top: 0;
     display: flex;
 
     &__title {
@@ -104,6 +114,7 @@ a {
     }
 
     &-menu {
+        overflow: hidden;
         position: fixed;
         top: 0;
         padding-top: 100px;
@@ -147,6 +158,48 @@ a {
         .fa-bars {
             font-size: 32px;
         }
+    }
+}
+
+.family {
+    position: relative;
+    z-index: 10;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/dist/img/girl.jpg');
+    background-size: cover;
+    background-position: center 50%;
+
+    &__box {
+        position: relative;
+        z-index: 20;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $pure-white;
+    }
+
+    &__heading {
+        position: relative;
+        z-index: 20;
+        padding: 35px 70px;
+        color: $pure-white;
+        text-align: center;
+        font-size: 35px;
+        font-weight: normal;
+    }
+
+    &__shadow {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.65);
     }
 }
 
@@ -230,6 +283,7 @@ a {
         height: 100%;
 
         h3 {
+            text-align: center;
             font-size: 22px;
         }
 
@@ -242,41 +296,6 @@ a {
 }
 
 // MEDIA
-@media (max-width: 992px) {
-    .about {
-        &__content {
-            width: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        &__pic {
-
-            img {
-                width: 100%;
-            }
-        }
-
-        &__text {
-            padding: 0;
-            width: 520px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            h3 {
-                padding-top: 15px;
-            }
-        }
-    }
-}
-
-@media(max-width: 1100px) {}
-
-@media(max-width: 768px) {}
 
 @media(min-width: 992px) {
 
@@ -297,14 +316,91 @@ a {
     }
 }
 
-@media(max-width: 576px) {
+@media(max-width: 1100px) {}
+
+@media (max-width: 992px) {
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: flex;
+    }
+
+
+    .family {
+        &__heading {
+            font-size: 28px;
+        }
+    }
+
     .about {
+        &__content {
+            padding: 0 100px;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
         &__pic {
-            width: 100%;
 
             img {
                 width: 100%;
             }
+        }
+
+        &__text {
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                padding-top: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+
+    .about {
+        &__content {
+            padding: 0 50px;
+        }
+
+        .family {
+            &__heading {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .family {
+
+        &__box {
+            width: 70%;
+        }
+
+        &__heading {
+            padding: 20px 40px;
+        }
+    }
+
+    .about {
+        &__content {
+            padding: 0 25px;
+        }
+
+        &__pic {
+            width: 100%;
         }
 
         &__text {
@@ -313,7 +409,7 @@ a {
             }
 
             p {
-                padding: 10px 20px 10px 20px;
+                // padding: 10px 20px 10px 20px;
                 width: 80%;
                 font-size: 16px;
             }
@@ -322,6 +418,17 @@ a {
 }
 
 @media(max-width: 450px) {
+    .family {
+        &__box {
+            width: 65%;
+        }
+
+        &__heading {
+            padding: 10px 20px;
+            font-size: 22px;
+        }
+    }
+
     .header {
         &__heading {
             font-size: 25px;
@@ -331,7 +438,7 @@ a {
     .about {
         &__text {
             p {
-                width: 50%;
+                // width: 50%;
                 font-size: 14px;
             }
         }
