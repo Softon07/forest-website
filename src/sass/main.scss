@@ -347,6 +347,7 @@ a {
 
         &__pic {
 
+            // width: 100%;
             img {
                 width: 100%;
             }
@@ -371,6 +372,10 @@ a {
 
     .about {
         &__content {
+            padding: 0;
+        }
+
+        &__text {
             padding: 0 50px;
         }
 
@@ -396,20 +401,29 @@ a {
 
     .about {
         &__content {
+            padding: 0;
+        }
+        
+        &__text {
             padding: 0 25px;
         }
 
+
         &__pic {
             width: 100%;
+
+            img {
+                width: 100%;
+            }
         }
 
         &__text {
+            padding: 0;
             h3 {
                 font-size: 18px;
             }
 
             p {
-                // padding: 10px 20px 10px 20px;
                 width: 80%;
                 font-size: 16px;
             }
