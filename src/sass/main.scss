@@ -486,6 +486,7 @@ a {
 
         justify-content: center;
         align-items: center;
+
     }
 
     &__data {
@@ -507,6 +508,7 @@ a {
 
         textarea {
             margin-top: 5px;
+            padding: 10px;
             width: 100%;
             resize: none;
         }
@@ -523,6 +525,10 @@ a {
         cursor: pointer;
     }
 
+    &__map {
+        padding-bottom: 50px;
+        width: 100%;
+    }
 }
 
 // MEDIA
