@@ -5,7 +5,6 @@ const sendBtn = document.querySelector('.send-btn');
 const closeBtn = document.querySelector('.close-btn');
 const popup = document.querySelector('.contact__popup');
 
-
 const showError = (input, msg) => {
     const formBox = input.parentElement;
     const errorMsg = formBox.querySelector('.error-text');
@@ -67,8 +66,6 @@ const checkErrors = () => {
         clearForm();
         popup.classList.add('show-popup');
     }
-
-    console.log(erroNumber);
 
 }
 
