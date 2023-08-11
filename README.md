@@ -29,6 +29,10 @@ To run the project, enter the command:
     gulp
 
 ## Project Description 🎉
+
+<strong>Access the website directly through the link:</strong>
+[Forest](https://softon07.github.io/forest-website/)
+
 The 'Forest' website project was created by me individually as part of the final phase of the course taught by Mateusz Maj from the educational platform https://mmcschool.pl/. The main goal of this project was to practically apply the knowledge and skills acquired to create a complete website according to the provided mockup.
 
 The project focused on replicating the visual layout and elements included in the mockup, with the focus on the desktop version of the homepage.
@@ -79,6 +83,10 @@ Aby uruchomić projekt, wprowadź polecenie:
     gulp
 
 ## Opis projektu 🎉
+
+<strong>Wejdź na stronę bezpośrednio przez link:</strong>
+[Forest](https://softon07.github.io/forest-website/)
+
 Projekt strony 'Forest' został przeze mnie stworzony indywidualnie jako część końcowej fazy kursu, której autorem jest Mateusz Maj z platformy edukacyjnej https://mmcschool.pl/. Głównym celem tego projektu było praktyczne zastosowanie zdobytej wiedzy i umiejętności w celu stworzenia kompletniej strony internetowej zgodnie z dostarczonym mockupem.
 
 Projekt skupiał się na odwzorowaniu wizualnego układu i elementów zawartych w mockupie, przy czym skupiono się na wersji desktopowej strony głównej.
