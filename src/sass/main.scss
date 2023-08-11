@@ -52,6 +52,10 @@ a {
     scroll-margin-top: 14rem;
 }
 
+.fa-tree {
+    color: $gray;
+}
+
 // nav
 .nav {
     position: sticky;
@@ -617,7 +621,7 @@ a {
         position: relative;
         z-index: 10;
         height: 25rem;
-        background-image: url('/dist/img/road.jpg');
+        background-image: url('../img/road.jpg');
         background-size: cover;
         background-position: center 60%;
     }
