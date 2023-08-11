@@ -41,15 +41,15 @@ a {
 
 #home,
 #contact {
-    scroll-margin-top: 90px;
+    scroll-margin-top: 9rem;
 }
 
 #about {
-    scroll-margin-top: 130px;
+    scroll-margin-top: 9rem;
 }
 
 #offer {
-    scroll-margin-top: 140px;
+    scroll-margin-top: 14rem;
 }
 
 // nav
@@ -64,7 +64,7 @@ a {
 .nav-desktop,
 .nav-mobile {
     width: 100%;
-    height: 90px;
+    height: 9rem;
     display: none;
     justify-content: space-between;
     align-items: center;
@@ -81,14 +81,14 @@ a {
     }
 
     &__box {
-        width: 100px;
+        width: 10rem;
         height: 100%;
         background-color: $pure-white;
         color: $black;
     }
 
     &__title {
-        font-size: 30px;
+        font-size: 3rem;
     }
 
     &__item {
@@ -105,19 +105,19 @@ a {
     position: sticky;
     top: 0;
     display: flex;
-    border-bottom: 0.1px solid rgba($black, 0.1);
+    border-bottom: 0.01rem solid rgba($black, 0.1);
 
     &__title {
-        padding-left: 25px;
+        padding-left: 2.5rem
     }
 
     &__item {
         display: flex;
-        height: 70px;
+        height: 7rem;
         color: $white;
         font-weight: bold;
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 0.2rem;
     }
 
     &__item:hover {
@@ -128,7 +128,7 @@ a {
         overflow: hidden;
         position: fixed;
         top: 0;
-        padding-top: 100px;
+        padding-top: 10rem;
         width: 100vw;
         height: 100%;
         display: flex;
@@ -149,14 +149,14 @@ a {
         z-index: 100;
         top: 0;
         right: 0;
-        padding: 50px;
-        width: 55px;
-        height: 55px;
+        padding: 5rem;
+        width: 5.5rem;
+        height: 5.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         background: none;
-        border: 1px solid transparent;
+        border: 0.1rem solid transparent;
         transition: color 0.3s;
         cursor: pointer;
     }
@@ -167,7 +167,7 @@ a {
 
     &__burger-box {
         .fa-bars {
-            font-size: 32px;
+            font-size: 3.2rem;
         }
     }
 }
@@ -175,7 +175,7 @@ a {
 .family {
     position: relative;
     z-index: 10;
-    height: 350px;
+    height: 35rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,16 +190,16 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid $white;
+        border: 0.1rem solid $white;
     }
 
     &__heading {
         position: relative;
         z-index: 20;
-        padding: 35px 70px;
+        padding: 3.5rem 7rem;
         color: $pure-white;
         text-align: center;
-        font-size: 35px;
+        font-size: 3.5rem;
         font-weight: normal;
     }
 
@@ -218,7 +218,7 @@ a {
 .header {
     position: relative;
     z-index: 1;
-    height: 380px;
+    height: 38rem;
     background-image: url('../img/jungle.jpg');
     background-size: cover;
     background-position: center 75%;
@@ -236,8 +236,8 @@ a {
     &__title {
         position: relative;
         z-index: 20;
-        padding-left: 35px;
-        padding-right: 35px;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
         width: 100%;
         height: 100%;
         display: flex;
@@ -247,11 +247,11 @@ a {
     }
 
     &__text {
-        font-size: 20px;
+        font-size: 2rem;
     }
 
     &__heading {
-        font-size: 32.5px;
+        font-size: 3.2rem;
     }
 
     &__text,
@@ -262,45 +262,52 @@ a {
 
 // about
 .about {
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
     width: 100%;
 
     &__title {
-        margin: 40px 0;
-        font-size: 32px;
+        margin: 4rem 0;
+        font-size: 3.2rem;
         text-align: center;
         text-transform: uppercase;
         font-weight: lighter;
     }
 
     &__content {
-        margin-bottom: 50px;
-        padding: 0 35px;
+        margin-bottom: 5rem;
+        padding: 0 3.5rem;
         width: 100%;
         height: 100%;
         display: flex;
     }
 
     &__pic {
-        width: 520px;
-
+        width: 52rem;
+        overflow: hidden;
+        
         img {
-            width: 520px;
+            width: 52rem;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
         }
     }
 
     &__text {
-        padding-left: 50px;
+        width: 50%;
+        padding-left: 5rem;
         height: 100%;
 
         h3 {
             text-align: left;
-            font-size: 22px;
+            font-size: 2.2rem;
         }
 
         p {
-            padding-top: 15px;
-            line-height: 28px;
+            padding-top: 1.5rem;
+            line-height: 2.8rem;
         }
     }
 
@@ -308,7 +315,7 @@ a {
 
 // offer
 .offer {
-    margin: 50px 0;
+    margin: 5rem 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -321,19 +328,19 @@ a {
     }
 
     &__heading {
-        padding-bottom: 25px;
+        padding-bottom: 2.5rem;
         text-align: center;
-        font-size: 32px;
+        font-size: 3.2rem;
         font-weight: lighter;
         text-transform: uppercase;
     }
 
     &__p {
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
     }
 
     &__link {
-        margin-top: 25px;
+        margin-top: 2.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -353,25 +360,30 @@ a {
     }
 
     &__card {
-        margin: 20px;
-        padding: 25px;
-        width: 280px;
+        margin: 2rem;
+        padding: 2.5rem;
+        width: 28rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
 
         &-name {
-            font-size: 22px;
+            font-size: 2.2rem;
             text-align: center;
             font-weight: normal;
         }
 
         &-price {
-            padding-top: 8px;
-            padding-bottom: 15px;
-            font-size: 40px;
+            padding-top: 0.8rem;
+            padding-bottom: 1.5rem;
+            font-size: 4rem;
             font-weight: bold;
         }
 
@@ -382,7 +394,7 @@ a {
         }
 
         &-item {
-            line-height: 30px;
+            line-height: 3rem;
 
             &--gray {
                 color: $gray;
@@ -390,13 +402,13 @@ a {
         }
 
         &-btn {
-            width: 180px;
-            height: 40px;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 18px;
+            width: 18rem;
+            height: 4rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
             border: none;
-            border-radius: 8px;
+            border-radius: 0.8rem;
             background-color: $white;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             cursor: pointer;
@@ -410,7 +422,7 @@ a {
 
 // footer
 .footer {
-    padding-top: 50px;
+    padding-top: 5rem;
     background-color: $milk;
 
     &__boxes {
@@ -420,49 +432,49 @@ a {
     }
 
     &__big-box-info {
-        margin-right: 50px;
+        margin-right: 5rem;
         width: 100%;
-        padding: 50px 0;
+        padding: 5rem 0;
         display: flex;
         justify-content: flex-end;
     }
 
 
     &__box {
-        padding: 0 20px;
+        padding: 0 2rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
 
         &--2 {
-            margin: 0 30px;
+            margin: 0 3rem;
         }
 
         &-title {
-            font-size: 20px;
+            font-size: 2rem;
         }
 
         &-list-item {
-            padding-top: 20px;
+            padding-top: 2rem;
         }
     }
 
 
     &__title-box {
-        margin-left: 50px;
+        margin-left: 5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 30%;
 
         &-heading {
-            font-size: 40px;
+            font-size: 4rem;
         }
     }
 
     &__bottom-text {
-        height: 90px;
+        height: 9rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -471,19 +483,19 @@ a {
 
 // contact
 .contact {
-    padding: 50px;
+    padding: 5rem;
     width: 100%;
 
     &__map {
-        padding-bottom: 50px;
+        padding-bottom: 5rem;
         width: 100%;
     }
 
     &__title {
         text-transform: uppercase;
         font-weight: lighter;
-        padding-bottom: 30px;
-        font-size: 32px;
+        padding-bottom: 3rem;
+        font-size: 3.2rem;
         text-align: center;
     }
 
@@ -505,16 +517,16 @@ a {
 
     &__data {
         input {
-            padding: 10px;
-            margin-top: 5px;
+            padding: 1rem;
+            margin-top: 0.5rem;
             width: 100%;
-            height: 40px;
-            border: 1px solid $black;
+            height: 4rem;
+            border: 0.1rem solid $black;
         }
     }
 
     &__form-box {
-        padding: 10px 20px;
+        padding: 1rem 2rem;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -522,16 +534,16 @@ a {
         align-items: flex-start;
 
         textarea {
-            margin-top: 5px;
-            padding: 10px;
+            margin-top: 0.5rem;
+            padding: 1rem;
             width: 100%;
             resize: none;
-            border: 1px solid $black;
+            border: 0.1rem solid $black;
         }
 
         .error-text {
-            padding-left: 2px;
-            padding-top: 5px;
+            padding-left: 0.2rem;
+            padding-top: 0.5rem;
             color: $red;
             visibility: hidden;
         }
@@ -541,7 +553,7 @@ a {
 
         input,
         textarea {
-            border: 1px solid $red;
+            border: 0.1rem solid $red;
             background-color: rgba(255, 0, 0, 0.1);
         }
 
@@ -551,9 +563,9 @@ a {
     }
 
     &__form-btn {
-        margin: 30px 20px;
-        padding: 10px 20px;
-        width: 300px;
+        margin: 3rem 2rem;
+        padding: 1rem 2rem;
+        width: 30rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -571,29 +583,29 @@ a {
 
     &__popup {
         position: fixed;
-        top: -300px;
+        top: -30rem;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 600px;
-        height: 200px;
+        width: 60rem;
+        height: 20rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: $white;
-        border: 2px solid $black;
-        border-radius: 8px;
+        border: 0.2rem solid $black;
+        border-radius: 0.8rem;
         transition: top 0.3s;
     }
 
     &__popup.show-popup {
-        top: 220px;
+        top: 22rem;
     }
 
     &__text {
-        padding: 25px 0;
+        padding: 2.5rem 0;
         text-align: center;
-        font-size: 25px;
+        font-size: 2.5rem;
     }
 }
 
@@ -604,7 +616,7 @@ a {
     &__header {
         position: relative;
         z-index: 10;
-        height: 250px;
+        height: 25rem;
         background-image: url('/dist/img/road.jpg');
         background-size: cover;
         background-position: center 60%;
@@ -613,8 +625,8 @@ a {
     &__heading-text {
         position: relative;
         z-index: 10;
-        padding: 0 50px;
-        height: 250px;
+        padding: 0 5rem;
+        height: 25rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -624,13 +636,13 @@ a {
 
     &__heading {
         text-align: center;
-        font-size: 30px;
+        font-size: 3rem;
     }
 
 
     &__text {
-        font-size: 18px;
-        padding-top: 10px;
+        font-size: 1.8rem;
+        padding-top: 1rem;
         color: $light-green;
         text-align: center;
     }
@@ -647,8 +659,8 @@ a {
     }
 
     &-space {
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -657,20 +669,21 @@ a {
 
     &-title {
         text-align: center;
-        padding-bottom: 20px;
-        font-size: 25px;
+        padding: 1rem 5rem;
+        font-size: 2.8rem;
 
     }
 
     &-description {
+        padding: 1rem 5rem;
         text-align: center;
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 
     &-box {
         position: relative;
         z-index: 10;
-        height: 500px;
+        height: 50rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -692,19 +705,21 @@ a {
         .offer__card {
             position: relative;
             z-index: 100;
-            // box-shadow: rgba(252, 252, 252, 0.4) 0px 5px 15px;
-            background-color: rgba($pure-white, 0.4);
-            border-radius: 25px;
+            background-color: rgba(39, 45, 40, 0.82);
+            border-radius: 2.5rem;
+            
 
             &-name {
                 color: $pure-white;
             }
 
             &-price {
-                color: $light-green;
-            }
+                color: $white;
 
-            &-items-box {}
+                &--second {
+                    color: $light-green;
+                }
+            }
 
             &-item {
                 color: $light-green;
@@ -715,15 +730,7 @@ a {
             }
 
         }
-
-        &__card-first {}
-
-        &__card-second {}
-
-        &__card-third {}
     }
-
-
 }
 
 
@@ -734,11 +741,11 @@ a {
         display: flex;
 
         &__title {
-            padding-left: 35px;
+            padding-left: 3.5rem;
         }
 
         &__boxes {
-            padding-right: 35px;
+            padding-right: 3.5rem;
         }
     }
 
@@ -760,13 +767,13 @@ a {
 
     .family {
         &__heading {
-            font-size: 28px;
+            font-size: 2.8rem;
         }
     }
 
     .about {
         &__content {
-            padding: 0 100px;
+            padding: 0 10rem;
             width: auto;
             display: flex;
             flex-direction: column;
@@ -789,7 +796,7 @@ a {
             align-items: center;
 
             h3 {
-                padding-top: 15px;
+                padding-top: 1.5rem;
             }
         }
     }
@@ -825,12 +832,12 @@ a {
         }
 
         &__text {
-            padding: 0 50px;
+            padding: 0 5rem;
         }
 
         .family {
             &__heading {
-                font-size: 24px;
+                font-size: 2.4rem;
             }
         }
     }
@@ -839,42 +846,68 @@ a {
 
         &__data-box {
             padding: 0;
-            min-width: 300px;
+            min-width: 30rem;
             flex-direction: column;
         }
 
         &__data {
-            padding: 10px 0;
+            padding: 1rem 0;
         }
 
         &__form-box {
-            padding: 10px 0;
+            padding: 1rem 0;
 
             textarea {
-                min-width: 300px;
+                min-width: 30rem;
             }
         }
 
         &__form-btn {
-            width: 200px;
-            margin: 30px 0;
+            width: 20rem;
+            margin: 3rem 0;
         }
 
 
         &__popup {
-            width: 400px;
+            width: 40rem;
         }
 
         &__popup.show-popup {
-            top: 220px;
+            top: 22rem;
         }
 
         &__text {
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
         }
 
     }
+
+    .all-offers {
+        &__heading {
+            font-size: 2.4rem;
+        }
+
+        &__text {
+            font-size: 1.5rem;
+        }
+
+        &-title {
+            text-align: center;
+            padding: 1rem 5rem;
+            font-size: 2.4rem;
+
+        }
+
+        &-description {
+            text-align: center;
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+        }
+
+    }
+
+
 
 }
 
@@ -886,7 +919,7 @@ a {
         }
 
         &__heading {
-            padding: 20px 40px;
+            padding: 2rem 4rem;
         }
     }
 
@@ -896,7 +929,7 @@ a {
         }
 
         &__text {
-            padding: 0 25px;
+            padding: 0 2.5rem;
         }
 
 
@@ -912,12 +945,12 @@ a {
             padding: 0;
 
             h3 {
-                font-size: 18px;
+                font-size: 1.8rem;
             }
 
             p {
                 width: 80%;
-                font-size: 16px;
+                font-size: 1.6rem;
             }
         }
     }
@@ -930,22 +963,21 @@ a {
         }
 
         &__heading {
-            padding: 10px 20px;
-            font-size: 22px;
+            padding: 1rem 2rem;
+            font-size: 2.2rem;
         }
     }
 
     .header {
         &__heading {
-            font-size: 25px;
+            font-size: 2.5rem;
         }
     }
 
     .about {
         &__text {
             p {
-                // width: 50%;
-                font-size: 14px;
+                font-size: 1.4rem;
             }
         }
     }
@@ -953,7 +985,7 @@ a {
     .offer {
 
         &__p {
-            padding: 10px 30px;
+            padding: 1rem 3rem;
             margin: 0 auto;
             text-align: center;
         }
@@ -964,7 +996,7 @@ a {
 
 
         &__card {
-            min-width: 240px;
+            min-width: 24rem;
             width: 80%;
         }
     }
@@ -977,7 +1009,7 @@ a {
         }
 
         &__big-box-info {
-            padding: 10px;
+            padding: 1rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -986,59 +1018,59 @@ a {
 
 
         &__box {
-            margin: 25px 0;
+            margin: 2.5rem 0;
 
             &-title {
-                font-size: 18px;
+                font-size: 1.8rem;
             }
 
             &-list-item {
-                font-size: 14px;
+                font-size: 1.4rem;
             }
         }
 
         &__title-box {
             &-heading {
-                font-size: 30px;
+                font-size: 3rem;
             }
         }
 
         &__bottom-text {
-            font-size: 13px;
+            font-size: 1.3rem;
         }
     }
 
     .contact {
         &__title {
-            padding-bottom: 20px;
+            padding-bottom: 2rem;
         }
 
-        padding: 20px;
+        padding: 2rem;
 
         &__data-box {
             padding: 0;
-            min-width: 200px;
+            min-width: 20rem;
             flex-direction: column;
         }
 
         &__data {
-            padding: 10px 0;
+            padding: 1rem 0;
         }
 
         &__form-box {
-            padding: 10px 0;
+            padding: 1rem 0;
 
             textarea {
-                min-width: 200px;
+                min-width: 20rem;
             }
         }
 
         &__form-btn {
-            width: 100px;
+            width: 10rem;
         }
 
         &__popup {
-            width: 200px;
+            width: 20rem;
         }
     }
 }
