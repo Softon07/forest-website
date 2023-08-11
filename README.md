@@ -47,7 +47,11 @@ In short, the 'Forest' project was my independent work, based on the mockup, but
 
 ## Screenshots 📺
 
-
+<img src="image-3.png">
+<img src="image-4.png">
+<img src="image-5.png">
+<img src="image-6.png">
+<img src="image-7.png">
 
 ## Author 🧑
 
@@ -91,9 +95,13 @@ W skrócie, projekt 'Forest' był moją samodzielną pracą, bazującą na mocku
 - JavaScript
 - Gulp
 
-## Screenshots 📺
+## Zrzuty 📺
 
-
+<img src="image-3.png">
+<img src="image-4.png">
+<img src="image-5.png">
+<img src="image-6.png">
+<img src="image-7.png">
 
 ## Autor 🧑
 
